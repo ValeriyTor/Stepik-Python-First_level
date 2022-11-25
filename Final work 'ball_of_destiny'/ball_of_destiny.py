@@ -13,7 +13,7 @@ print("Oooo, wonderful! Hello, ", name,"!", sep="")
 flag = False
 while flag == False:
     question = input("Tell me your qustion: ")
-    print("Ok, I understand... \n thinks... \n thinks...\n thinks...")
+    print("Ok, I understand... \n think... \n think...\n think...")
     print("And your answer is: ")
     print(choice(phrases))
     print("Do you want to submit another question? Please, say 'Yes' or 'No' ")
