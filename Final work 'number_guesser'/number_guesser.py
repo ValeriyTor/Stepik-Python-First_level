@@ -12,6 +12,7 @@ def is_digit(num):
     else:
         return False
 
+counter = 0
 flag = False
 print("Hello, my friend! Do yoy want to play with me?")
 print("Please, say 'Yes' or 'No'")
@@ -45,13 +46,16 @@ while flag == False:
                 if my_number > secret_number:
                     print(phrases_too_much[randint(0,len(phrases_too_much)-1)])
                     print("Try again!")
+                    counter += 1
                     flag1 = False
                 elif my_number < secret_number:
                     print(phrases_too_little[randint(0,len(phrases_too_little)-1)])
                     print("Try again!")
+                    counter += 1
                     flag1 = False
                 else:
                     print(phrases_guessed[randint(0,len(phrases_guessed)-1)])
+                    print("You used", counter, "tries")
                     flag1 = True
             else:
                 print("You didn't enter a number! Try again!")
