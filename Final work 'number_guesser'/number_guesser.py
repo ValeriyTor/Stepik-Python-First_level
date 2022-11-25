@@ -55,7 +55,7 @@ while flag == False:
                     flag1 = False
                 else:
                     print(phrases_guessed[randint(0,len(phrases_guessed)-1)])
-                    print("You used", counter, "tries")
+                    print("You used", counter+1, "tries")
                     flag1 = True
             else:
                 print("You didn't enter a number! Try again!")
